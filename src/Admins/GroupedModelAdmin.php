@@ -3,7 +3,7 @@
 namespace Pixelpoems\GroupedTabs\Admins;
 
 use SilverStripe\Admin\ModelAdmin;
-use SilverStripe\ORM\ArrayData;
+use SilverStripe\View\ArrayData;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\ORM\DataObject;
 
