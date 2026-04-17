@@ -10,6 +10,8 @@ Silverstripe module that allows grouped tabs for ModelAdmins.
 
 * Silverstripe CMS ^6.0
 
+For CMS 5 use Tag `^1`
+
 ## Installation
 ```
 composer require pixelpoems/silverstripe-grouped-tabs
