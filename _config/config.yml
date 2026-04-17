@@ -4,5 +4,5 @@ Name: pp-grouped-tabs
 
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - 'pixelpoems/grouped-tabs:client/dist/grouped-tabs.css'
+    - 'pixelpoems/silverstripe-grouped-tabs: client/dist/grouped-tabs.css'
 

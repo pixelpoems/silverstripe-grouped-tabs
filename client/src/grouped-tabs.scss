@@ -66,6 +66,13 @@
                 display: block;
             }
         }
+
+        &:last-of-type {
+            .tab-group-items {
+                left: auto;
+                right: 0;
+            }
+        }
     }
 }
 
