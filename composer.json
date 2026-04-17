@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "silverstripe/cms": "^6"
+        "silverstripe/cms": "^5"
     },
     "autoload": {
         "psr-4": {

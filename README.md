@@ -8,7 +8,7 @@ Silverstripe module that allows grouped tabs for ModelAdmins.
 
 ## Requirements
 
-* Silverstripe CMS ^6.0
+* Silverstripe CMS ^5.0
 
 ## Installation
 ```
