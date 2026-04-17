@@ -16,6 +16,7 @@ composer require pixelpoems/silverstripe-grouped-tabs
 ```
 
 ## Usage
+### GroupedModelAdmin
 ```php
 <?php
 namespace App\Admins;
@@ -64,7 +65,26 @@ en:
     grouped: 'Grouped'
 ```
 
-For example with some other DataObjects it looks like this:
+### GroupedModelAdmin
+```php
+    public function getCMSFields(): FieldList
+    {
+        $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root', GroupedTab::create('Additional', 'Additional'));
+        $fields->addFieldsToTab('Root.Additional.AdditonalTab1', [
+            TextField::create('ABC', _t(self::class . '.ABC', 'ABC')),
+        ]);
+        $fields->addFieldsToTab('Root.Additional.AdditonalTab2', [
+            TextField::create('ABC2', _t(self::class . '.ABC2', 'ABC2')),
+            HTMLEditorField::create('Content2', _t(self::class . '.Content', 'Content'))
+        ]);
+
+        return $fields;
+    }
+```
+### Display
+The Grouping looks like this in the CMS:
 ![grouped-modeladmin.png](resources/grouped-modeladmin.png)
 
 ## Reporting Issues
