@@ -1,0 +1,7 @@
+{
+  "client/src/grouped-tabs.scss": {
+    "file": "grouped-tabs.css",
+    "src": "client/src/grouped-tabs.scss",
+    "isEntry": true
+  }
+}

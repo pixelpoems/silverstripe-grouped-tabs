@@ -1,0 +1,86 @@
+%tab-group-shared {
+    li.tab-group {
+        position: relative;
+
+        a.tab-group-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+
+            &::after {
+                content: '▾';
+                font-size: 10px;
+                opacity: 0.6;
+                transition: transform 0.15s ease;
+            }
+        }
+
+        .tab-group-items {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 200;
+            margin: 0;
+            padding: 4px 0;
+            min-width: 160px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+            color: #333;
+
+            .tab-group-item {
+                a {
+                    display: block;
+                    padding: 8px 14px;
+                    color: inherit;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    font-size: inherit;
+                    border-bottom: none !important;
+
+                    &:hover {
+                        background: #f0f0f0;
+                        border-bottom: none !important;
+                    }
+                }
+
+                &.current a,
+                &.ui-tabs-active a {
+                    font-weight: 600;
+                    background: #e8e8e8;
+                    padding-left: 11px;
+                }
+            }
+        }
+
+        &:hover {
+            .tab-group-title::after {
+                transform: rotate(180deg);
+            }
+
+            .tab-group-items {
+                display: block;
+            }
+        }
+    }
+}
+
+// Hidden nav items for jQuery UI tab registration (child tabs of grouped tabs)
+li.tab-child-item {
+    display: none !important;
+}
+
+// ModelAdmin header tabs
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav {
+    @extend %tab-group-shared;
+}
+
+// DataObject form tabs
+.ui-tabs.ss-tabset .ui-tabs-nav {
+    @extend %tab-group-shared;
+}
