@@ -1,7 +1,6 @@
 # Silverstripe Grouped Tabs Module
 [![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#beta)
-
-
+Silverstripe module that allows grouped tabs for ModelAdmins.
 
 * [Requirements](#requirements)
 * [Installation](#installation)

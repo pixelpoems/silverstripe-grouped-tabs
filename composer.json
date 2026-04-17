@@ -1,7 +1,7 @@
 {
     "name": "pixelpoems/silverstripe-grouped-tabs",
     "type": "silverstripe-vendormodule",
-    "description": "Silverstripe module that allows grouped tabs for ModelAdmins and CMS Tabs",
+    "description": "Silverstripe module that allows grouped tabs for ModelAdmins.",
     "keywords": [
         "silverstripe"
     ],
