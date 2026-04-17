@@ -65,6 +65,9 @@ en:
     grouped: 'Grouped'
 ```
 
+For example with some other DataObjects it looks like this:
+![grouped-modeladmin.png](resources/grouped-modeladmin.png)
+
 ## Reporting Issues
 Please [create an issue](https://github.com/pixelpoems/silverstripe-grouped-tabs/issues) for any bugs you've found, or
 features you're missing.
