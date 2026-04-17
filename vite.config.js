@@ -18,9 +18,11 @@ export default defineConfig(async ({command, mode, isSsrBuild, isPreview}) => {
             rollupOptions: {
                 input: {
                     'grouped-tabs.css': './client/src/grouped-tabs.scss',
+                    'grouped-tabs': './client/src/grouped-tabs.js',
                 },
                 output: {
-                    assetFileNames: '[name].[ext]'
+                    assetFileNames: '[name].[ext]',
+                    entryFileNames: '[name].js'
                 }
             }
         }

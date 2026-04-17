@@ -1,4 +1,10 @@
 {
+  "client/src/grouped-tabs.js": {
+    "file": "grouped-tabs.js",
+    "name": "grouped-tabs",
+    "src": "client/src/grouped-tabs.js",
+    "isEntry": true
+  },
   "client/src/grouped-tabs.scss": {
     "file": "grouped-tabs.css",
     "src": "client/src/grouped-tabs.scss",

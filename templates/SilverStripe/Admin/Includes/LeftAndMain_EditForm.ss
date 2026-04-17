@@ -24,10 +24,7 @@
 							<% end_loop %>
 						</div>
 					</li>
-					<% loop $Tabs %>
-					<li class="tab-child-item"><a href="#$id">$Title</a></li>
-					<% end_loop %>
-					<% else %>
+						<% else %>
 					<li<% if $extraClass %> class="$extraClass"<% end_if %>><a href="#$id">$Title</a></li>
 					<% end_if %>
 				<% end_loop %>
